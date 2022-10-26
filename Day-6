@@ -1,0 +1,10 @@
+#Reverse a string using python
+def reverse(a):
+    rev=""
+    for i in a:
+        rev=i+rev
+    return rev
+    
+sent=input()
+print("String=",sent)
+print("Reverse=",reverse(sent))
