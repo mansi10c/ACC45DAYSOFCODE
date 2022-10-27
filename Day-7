@@ -1,0 +1,8 @@
+#Print maximum of inputted numbers
+a=int(input("Enter the total numbers: "))
+x=0
+for i in range(a):
+    a=int(input())
+    if a>x:
+        x=a
+print("The maximum number is:",x)
