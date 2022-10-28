@@ -1,0 +1,12 @@
+#Way to find vowles in python through function
+import re
+def Check_Vow(string, vowels):
+	str_list = re.findall(f'[{vowels}]', string, re.I)
+	print(len(str_list))
+	
+	# Returnig the list of matched element
+	return str_list
+# Driver Code
+vowels = 'aeiou'
+string = input()
+print (Check_Vow(string, vowels))
