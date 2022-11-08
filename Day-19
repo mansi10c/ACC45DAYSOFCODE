@@ -1,0 +1,21 @@
+//Concatinating string in C
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char arr[100],arr1[100];
+    int a,b,c,i;
+    printf("\n Enter the string-1: ");
+    gets(arr);
+    printf("\n Enter the string-2: ");
+    gets(arr1);
+    a=strlen(arr);
+    b=strlen(arr1);
+    if (a>b)
+        c=b;
+    else
+        c=a;
+    printf("\n The combined string: ");
+    for (i=0; i<c; i++)
+        printf("%c%c, ",arr[i],arr1[i]);
+}
