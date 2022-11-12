@@ -1,0 +1,14 @@
+#done on codechef [Backpack] in python
+
+t=int(input())
+c=1
+for i in range(t):
+    a,b,c=map(int,input().split())
+    if b>c:
+        x=b/c
+        y=b//c
+        if x>1:
+            y+=1
+            print(a*y)
+    else:
+        print(a)
